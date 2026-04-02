@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+    /* Parchment #F4E9D2 */
+    --background: 0.924 0.034 83;
+    /* Deep brown #3A2A1E */
+    --foreground: 0.263 0.038 51;
+    /* Cream card #FAF2E2 */
+    --card: 0.955 0.025 83;
+    --card-foreground: 0.263 0.038 51;
+    --popover: 0.955 0.025 83;
+    --popover-foreground: 0.263 0.038 51;
+    /* Burnt orange #A95512 */
+    --primary: 0.527 0.148 51;
+    --primary-foreground: 0.985 0 0;
+    /* Light parchment */
+    --secondary: 0.94 0.03 83;
+    --secondary-foreground: 0.263 0.038 51;
+    --muted: 0.94 0.03 83;
+    --muted-foreground: 0.5 0.03 60;
+    /* Gold #C9A46A */
+    --accent: 0.72 0.092 68;
+    --accent-foreground: 0.263 0.038 51;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    /* Gold border */
+    --border: 0.72 0.092 68;
+    --input: 0.88 0.04 75;
+    --ring: 0.527 0.148 51;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.924 0.034 83;
+    --sidebar-foreground: 0.263 0.038 51;
+    --sidebar-primary: 0.527 0.148 51;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.72 0.092 68;
+    --sidebar-accent-foreground: 0.263 0.038 51;
+    --sidebar-border: 0.72 0.092 68;
+    --sidebar-ring: 0.527 0.148 51;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Lato", sans-serif;
+    background-color: #f4e9d2;
+    color: #3a2a1e;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Playfair Display", serif;
+  }
+}
